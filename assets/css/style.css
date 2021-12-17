@@ -113,13 +113,16 @@ body {
 	font-size: 21px;
 	height: 48px;
 	line-height: 57px;
+	overflow: hidden;
+	padding-left: 30px;
 	padding-right: 30px;
 	text-align: end;
 }
 
 .output {
-	font-size: 48px;
+	font-size: 45px;
 	height: 48px;
+	padding-left: 30px;
 	padding-right: 30px;
 	text-align: end;
 }
@@ -138,7 +141,7 @@ body {
 .buttons-container .button {
 	cursor: pointer;
 	border-radius: 9px;
-	padding: 30px;
+	padding: 27px;
 	text-align: center;
 }
 
