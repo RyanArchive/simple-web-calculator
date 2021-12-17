@@ -33,6 +33,22 @@ body {
 
 [class*="column-"] {
 	float: left;
+	/* width: 100%; */
+}
+
+.column-3 {
+	width: 25%;
+}
+
+.column-4 {
+	width: 33.33%;
+}
+
+.column-6 {
+	width: 50%;
+}
+
+.column-12 {
 	width: 100%;
 }
 
@@ -40,53 +56,29 @@ body {
 	padding: 1px;
 }
 
-@media only screen and (min-width: 768px) {
-	.column-1 {
-		width: 8.33%
-	}
-
-	.column-2 {
-		width: 16.66%
-	}
-
-	.column-3 {
-		width: 25%
-	}
-
+@media only screen and (max-width: 1024px) {
 	.column-4 {
-		width: 33.33%
+		width: 50%;
 	}
 
-	.column-5 {
-		width: 41.66%
+	.pad-only {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.column-4 {
+		width: 70%;
 	}
 
-	.column-6 {
-		width: 50%
+	.pad-only {
+		width: 15%;
 	}
+}
 
-	.column-7 {
-		width: 58.33%
-	}
-
-	.column-8 {
-		width: 66.66%
-	}
-
-	.column-9 {
-		width: 75%
-	}
-
-	.column-10 {
-		width: 83.33%
-	}
-
-	.column-11 {
-		width: 91.66%
-	}
-
-	.column-12 {
-		width: 100%
+@media only screen and (max-width: 600px) {
+	.column-4 {
+		width: 100%;
 	}
 }
 
