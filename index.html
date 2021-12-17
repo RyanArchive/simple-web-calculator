@@ -6,6 +6,7 @@
 		<title>Simple Web Calculator</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	</head>
 
@@ -23,7 +24,11 @@
 					</div>
 
 					<div class="row">
-						<div class="column-12 output"></div>
+						<div class="column-12 to-compute" id="to-compute"></div>
+					</div>
+
+					<div class="row">
+						<div class="column-12 output" id="output">0</div>
 					</div>
 
 					<div class="row">
@@ -31,21 +36,21 @@
 							<div class="row">
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button divide">
+										<div class="column-12 button divide" onclick="enterDivide()">
 											/
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button times">
-											x
+										<div class="column-12 button times" onclick="enterTimes()">
+											*
 										</div>
 									</div>
 								</div>
 								<div class="column-6">
 									<div class="row">
-										<div class="column-12 button delete">
+										<div class="column-12 button delete" onclick="deleteLast()">
 											DEL
 										</div>
 									</div>
@@ -54,28 +59,28 @@
 							<div class="row">
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button seven">
+										<div class="column-12 button seven" onclick="enterSeven()">
 											7
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button eight">
+										<div class="column-12 button eight" onclick="enterEight()">
 											8
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button nine">
+										<div class="column-12 button nine" onclick="enterNine()">
 											9
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button clear">
+										<div class="column-12 button clear" onclick="clearAll()">
 											C
 										</div>
 									</div>
@@ -83,28 +88,28 @@
 							</div><div class="row">
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button four">
+										<div class="column-12 button four" onclick="enterFour()">
 											4
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button five">
+										<div class="column-12 button five" onclick="enterFive()">
 											5
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button six">
+										<div class="column-12 button six" onclick="enterSix()">
 											6
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button minus">
+										<div class="column-12 button minus" onclick="enterMinus()">
 											-
 										</div>
 									</div>
@@ -112,28 +117,28 @@
 							</div><div class="row">
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button one">
+										<div class="column-12 button one" onclick="enterOne()">
 											1
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button two">
+										<div class="column-12 button two" onclick="enterTwo()">
 											2
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button three">
+										<div class="column-12 button three" onclick="enterThree()">
 											3
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button plus">
+										<div class="column-12 button plus" onclick="enterPlus()">
 											+
 										</div>
 									</div>
@@ -141,21 +146,21 @@
 							</div><div class="row">
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button zero">
+										<div class="column-12 button zero" onclick="enterZero()">
 											0
 										</div>
 									</div>
 								</div>
 								<div class="column-3">
 									<div class="row">
-										<div class="column-12 button dot">
+										<div class="column-12 button dot" onclick="enterDot()">
 											.
 										</div>
 									</div>
 								</div>
 								<div class="column-6">
 									<div class="row">
-										<div class="column-12 button equals">
+										<div class="column-12 button equals" onclick="compute()">
 											=
 										</div>
 									</div>
@@ -168,6 +173,9 @@
 				<div class="column-4 pad-only"></div>
 			</div>
 		</div>
+
+		<!-- JS -->
+		<script type="text/javascript" src="assets/js/function.js"></script>
 		
 	</body>
 

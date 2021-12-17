@@ -109,8 +109,19 @@ body {
 	text-align: center;
 }
 
+.to-compute {
+	font-size: 21px;
+	height: 48px;
+	line-height: 57px;
+	padding-right: 30px;
+	text-align: end;
+}
+
 .output {
-	height: 99px;
+	font-size: 48px;
+	height: 48px;
+	padding-right: 30px;
+	text-align: end;
 }
 
 /* Buttons */
@@ -125,6 +136,7 @@ body {
 }
 
 .buttons-container .button {
+	cursor: pointer;
 	border-radius: 9px;
 	padding: 30px;
 	text-align: center;
