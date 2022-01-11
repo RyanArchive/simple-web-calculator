@@ -27,4 +27,4 @@ Web Systems and Technologies | 05 Hands-on Activity 1 - ARG
 
 ## Published
 
-[Dodge the Red Blocks](https://rynrsts.github.io/simple-web-calculator/)
+[Simple Web Calculator](https://rynrsts.github.io/simple-web-calculator/)
