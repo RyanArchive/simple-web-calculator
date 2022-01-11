@@ -22,3 +22,9 @@ Web Systems and Technologies | 05 Hands-on Activity 1 - ARG
 - CSS
 - JavaScript
 - Any text editor (e.g. VS Code, Sublime)
+
+<br>
+
+## Published
+
+[Dodge the Red Blocks](https://rynrsts.github.io/simple-web-calculator/)
