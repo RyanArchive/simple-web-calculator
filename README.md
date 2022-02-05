@@ -1,12 +1,7 @@
 # simple-web-calculator
 
-Simple web calculator
+Web calculator that can do basic operations with multiple numbers
 
-<br>
-
-## Additional Context
-
-Web Systems and Technologies | 05 Hands-on Activity 1 - ARG
 
 <br>
 
